@@ -10,12 +10,11 @@ public class CarManager {
                 15000, 1200, Color.GREEN);
 
         Car renualt = new Car( "Renault Laguna", 2000,
-                9700, 1600, Color.WHITE);
+                9700, 1600, Color.valueOf("WHITE"));
 
         System.out.println(prius);
         System.out.println(renualt);
         System.out.println(renualt);
-
 
     }
 
