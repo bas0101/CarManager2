@@ -1,5 +1,4 @@
 package ua.com.car;
-
 import java.util.Objects;
 
 public class Car {

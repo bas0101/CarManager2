@@ -6,7 +6,7 @@ public class CarManager {
 
     public static void main(String[] args) {
        // Color.valueOf("GREEN")
-        Car prius = new Car("Toyota Prius", 2008,
+        PassengerCar prius = new PassengerCar("Toyota Prius", 2008,
                 15000, 1200, Color.GREEN);
 
         Car renualt = new Car( "Renault Laguna", 2000,
