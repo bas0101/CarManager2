@@ -15,6 +15,9 @@ public class CarManager {
         Car renualt2 = new Car( "Renault Laguna", 2000,
                 9700, 1600, Color.valueOf("WHITE"));
 
+        prius.addDistance(1000);
+        prius.addDistance(50);
+
         System.out.println(prius);
         System.out.println(renualt);
 
