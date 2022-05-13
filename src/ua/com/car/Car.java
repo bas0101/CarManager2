@@ -1,7 +1,7 @@
 package ua.com.car;
 import java.util.Objects;
 
-public abstract class Car {
+public abstract class Car implements Serviceable{
     String name;
     int yearOfProduction;
     int price;
