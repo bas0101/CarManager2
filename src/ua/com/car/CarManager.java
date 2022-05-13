@@ -6,13 +6,13 @@ public class CarManager {
 
     public static void main(String[] args) {
        // Color.valueOf("GREEN")
-        PassengerCar prius = new PassengerCar("Toyota Prius", 2008,
+        Car prius = new PassengerCar("Toyota Prius", 2008,
                 15000, 1200, Color.GREEN);
 
-        Car renualt = new Car( "Renault Laguna", 2000,
+        Car renualt = new Bus( "Renault Laguna", 2000,
                 9700, 1600, Color.valueOf("WHITE"));
 
-        Car renualt2 = new Car( "Renault Laguna", 2000,
+        Car renualt2 = new Bus( "Renault Laguna", 2000,
                 9700, 1600, Color.valueOf("WHITE"));
 
         prius.addDistance(1000);

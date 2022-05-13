@@ -1,7 +1,7 @@
 package ua.com.car;
 import java.util.Objects;
 
-public class Car {
+public abstract class Car {
     String name;
     int yearOfProduction;
     int price;
@@ -24,13 +24,8 @@ public class Car {
         distanceOnService = distanceOnService + additionalDaistance;
     }
 
-    public boolean isReadyToService(){
-        if (distanceOnService > 10000) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    public abstract boolean isReadyToService();
+
 
     public int getDistanceOnService() {
         return distanceOnService;
