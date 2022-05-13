@@ -8,6 +8,7 @@ public class Car {
     int weight;
     Color color;
     private int distance = 0;
+    protected int distanceOnService = 0;
 
 
     public Car(String name, int yearOfProduction, int price, int weight, Color color) {
@@ -19,15 +20,21 @@ public class Car {
     }
 
     public void addDistance(int additionalDaistance){
-        if(additionalDaistance < 0){
-            System.out.println("<0");
+        distance = distance + additionalDaistance;
+        distanceOnService = distanceOnService + additionalDaistance;
+    }
+
+    public boolean isReadyToService(){
+        if (distanceOnService > 10000) {
+            return true;
         } else {
-            distance = distance + additionalDaistance;
+            return false;
         }
     }
 
-
-
+    public int getDistanceOnService() {
+        return distanceOnService;
+    }
 
     public int getDistance() {
         return distance;
@@ -42,6 +49,7 @@ public class Car {
                 ", weight=" + weight +
                 ", color=" + color +
                 ", distance=" + distance +
+                ", distanceOnService=" + distanceOnService +
                 '}';
     }
 

@@ -17,13 +17,15 @@ public class CarManager {
 
         prius.addDistance(1000);
         prius.addDistance(50);
+        prius.addDistance(15000);
+        renualt.addDistance(5000);
 
         System.out.println(prius);
         System.out.println(renualt);
 
 
-        System.out.println(prius.equals(renualt2));
-        System.out.println(renualt.equals(renualt2));
+       System.out.println(prius.isReadyToService());
+       System.out.println(renualt.isReadyToService());
 
     }
 
